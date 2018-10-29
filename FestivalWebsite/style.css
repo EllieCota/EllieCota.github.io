@@ -1,55 +1,40 @@
+header { 
+    background-color: yellow;
+    background-position: center;
+    margin: 0px 100px 0px 100px;
+        }
 
-@import url('https://fonts.googleapis.com/css?family=Lora');
-Body {
-    font-family: 'lora';
-    font-size: 18px;
-    line-height: 1.5;
-    
-    width: 640px;
-    margin: 40px auto;
+h1 {
+    font-size: 150px;
+    text-align: center;
+    margin: 0px 100px 0px 100px; 
+     }
+h2{
+    font-size: 100px;
+    text-align: right;
+    padding-right: 700px;
 }
 
-nav {
-    background-color: #f05d5d;
-    padding: 20px 40px 20px 40px;
-        
+footer {
+    text-align: center;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0px 15px 0px 0px;
-    border-bottom: 2px solid #f05d5d;
-
-}
-nav a:hover {
-    color: #5000ff;
-    border-bottom: 2px solid #ffffff; 
-}
 section {
-    background-color: #5000ff;
-    padding: 40px;
-    color: white;
-    }
-section.fullbleed{
-    padding: 0px;
-    }
-section.fullbleed img {
-    width: 100%;
+    font-size: 40px;
+    margin: 0px 100px 0px 100px;
 }
-h1, h2 {
-    font-size: 36px;
-    line-height: 1.3;
+
+h3{ text-align: center;
+    word-spacing: 600px; 
+    font-size: 60px
 }
-h2 {
-    font-style: italic;
-    margin: 20px 0px 20px 0px;
+
+div {
+    background-color: lightcyan;
 }
-@media (max-width: 700px) {
-    body {
-        font-size: 16px;
-        width:auto;
-        margin: 0;
-    }
-    
+
+footer {
+    background-color: yellow;
+    font-size: 60px;
+    word-spacing: 400px;
 }
