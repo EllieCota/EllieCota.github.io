@@ -37,6 +37,7 @@ footer {
 
 section {
     font-size: 30px;
+    
     margin: 0px 25px 0px 25px;
 }
 
@@ -46,9 +47,8 @@ h3{ text-align: center;
     padding-top: 800px
 }
 
-div {
-    
-    
+div { 
+    background-color: lightcyan;
 }
 
 footer {
