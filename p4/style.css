@@ -1,55 +1,97 @@
-
-@import url('https://fonts.googleapis.com/css?family=Lora');
-Body {
-    font-family: 'lora';
-    font-size: 18px;
-    line-height: 1.5;
-    
-    width: 640px;
-    margin: 40px auto;
+* {
+    box-sizing: border-box;
 }
 
-nav {
-    background-color: #f05d5d;
-    padding: 20px 40px 20px 40px;
+body {
+    font-family: helvetica;
+    font-size: 24px;
+    line-height: 1.5;
+    background-color: black;
+    color: #ffffff;
         
 }
 
-nav a {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+header h1{
+    float: left;
+}
+header nav {
+    float: right;
+}
+header nav a{
     color: #ffffff;
     text-decoration: none;
-    margin: 0px 15px 0px 0px;
-    border-bottom: 2px solid #f05d5d;
+    margin-left: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
 
+header nav a:hover {
+    border-bottom: 2px solid #ff00ff;
 }
-nav a:hover {
-    color: #5000ff;
-    border-bottom: 2px solid #ffffff; 
+
+header nav a.selected{
+    border-bottom: 2px solid #666666;
 }
+
 section {
-    background-color: #5000ff;
-    padding: 40px;
-    color: white;
-    }
-section.fullbleed{
-    padding: 0px;
-    }
-section.fullbleed img {
-    width: 100%;
+    text-align: center;
 }
-h1, h2 {
+
+div {
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+div h2 {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 250px;
     font-size: 36px;
-    line-height: 1.3;
+    line-height: 1.2;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s;
 }
-h2 {
-    font-style: italic;
-    margin: 20px 0px 20px 0px;
+
+div:hover h2 {
+    opacity: 1;
 }
-@media (max-width: 700px) {
-    body {
-        font-size: 16px;
-        width:auto;
-        margin: 0;
-    }
-    
+
+div img {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+div:hover img {
+    opacity: 0.5;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+footer p {
+    float: left;
+}
+footer nav {
+    float: right;
+}
+footer img {
+    width: 24px;
 }
